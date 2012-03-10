@@ -4,14 +4,14 @@
     %tr
       %th ID
       %th Name
-      %th Created at
+      %th Description
       %th Actions
   %tbody
     - recipes.each do |recipe|
       %tr
         %td= recipe.id
         %td= link_to recipe.name, recipe_path(recipe)
-        %td= recipe.created_at
+        %td= recipe.description
         %td
           %a.btn{:href => recipe_path(recipe)} Show
           %a.warning-button{:href => edit_recipe_path(recipe)} Edit

@@ -1,7 +1,10 @@
 .clearfix
-  = f.label :name, t("activerecord.attributes.recipe.name", :default => "Name"), :class => :label
+  = f.label :name, "Name", :class => :label
   .input
     = f.text_field :name, :class => 'text_field'
+  = f.label :name,"Description", :class => :label
+  .input
+    = f.text_area :description, :class => 'text_area', 'rows' => 3
 
 .form-actions
   %button.btn-primary{:type => "submit"} Save

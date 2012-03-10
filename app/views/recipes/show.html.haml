@@ -1,5 +1,7 @@
-%label{:class => "label"}= t("activerecord.attributes.recipe.name", :default => t("activerecord.labels.name", :default => "Name")) + ":"
+%label{:class => "label"} Name:
 %p= recipe.name
+%label{:class => "label"} Description:
+%p= recipe.description
 
 .form-actions
   %a.btn{:href => recipes_path} Back
