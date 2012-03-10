@@ -13,8 +13,8 @@
         %td= link_to recipe.name, recipe_path(recipe)
         %td= recipe.created_at
         %td
-          %a.btn.btn-info{:href => recipe_path(recipe)} Show
-          %a.btn.btn-warning{:href => edit_recipe_path(recipe)} Edit
-          %a.delete{:href => recipe_path(recipe), :method => :delete, :confirm => "Are you sure?"}
+          %a.btn{:href => recipe_path(recipe)} Show
+          %a.warning-button{:href => edit_recipe_path(recipe)} Edit
+          %a.delete-button{:href => recipe_path(recipe), 'data-method' => 'delete', 'data-confirm' => "Are you sure?"}
 
 = link_to "New", new_recipe_path, :class => 'btn btn-primary'

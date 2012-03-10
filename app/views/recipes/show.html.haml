@@ -2,6 +2,6 @@
 %p= recipe.name
 
 .form-actions
-  = link_to "Back", recipes_path, :class => 'btn'
-  = link_to "Edit", edit_recipe_path(recipe), :class => 'btn'
-  = link_to "Delete", recipe_path(recipe), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn'
+  %a.btn{:href => recipes_path} Back
+  %a.warning-button{:href => edit_recipe_path(recipe)} Edit
+  %a.delete-button{:href => recipe_path(recipe), 'data-method' => 'delete', 'data-confirm' => "Are you sure?"}
