@@ -21,6 +21,6 @@ class RecipesController < ApplicationController
 
   def destroy
     recipe.destroy
-    redirect_to recipes_url
+    redirect_to recipes_url, notice: "Recipe was succesfully deleted"
   end
 end

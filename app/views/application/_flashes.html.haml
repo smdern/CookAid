@@ -1,0 +1,5 @@
+%ul.flash-messages
+  - flash.each do |key, value|
+    %li.alert{:title => "#{key.to_s.humanize}", :class => "alert-#{key}"}
+      %a.close{ :href => '#', 'data-dismiss'=>'alert'}x
+      = value
