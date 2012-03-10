@@ -7,9 +7,11 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.2'
   gem "coffee-rails", "~> 3.2.2"
-
+  gem "compass"
+  gem 'compass-rails'
+  gem 'bootstrap-sass'
   gem 'uglifier'
-  gem 'twitter-bootstrap-rails'
+  gem 'font-awesome-sass-rails'
 end
 
 group :development do
